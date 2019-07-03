@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>微金所</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--顶部通栏-->
+<header class="wjs-topbar hidden-sm hidden-xs">
+    <div class="container ">
+        <div class="rows">
+            <div class="col-md-2 top-code">
+                <a href="#" class="wjs-topbar-code">
+                    <span class="wjs_icon wjs_icon_phone"></span>
+                    <span>手机微金所</span>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                    <img src="images/code.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <span class="wjs_icon wjs_icon_tel"></span>
+                <span>4006-89-4006（服务时间：9:00-21:00）</span>
+            </div>
+            <div class="col-md-2">
+                <a href="#">常见问题</a>
+                <a href="#">财富登录</a>
+            </div>
+            <div class="col-md-3">
+                <a href="#" class="btn btn-md btn-danger topbar-register">免费注册</a>
+                <a href="#" class="topbar-login">登录</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--导航栏-->
+<nav class="navbar navbar-default wjs-navbar" data-spy="affix" data-offset-top="100">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <span class="wjs_icon wjs_icon_logo wjs-navbar-logo"></span>
+                <span class="wjs_icon wjs_icon_name wjs-navbar-name"></span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">我要投资</a></li>
+                <li><a href="#">我要借贷</a></li>
+                <li><a href="#">平台介绍</a></li>
+                <li><a href="#">新手专区</a></li>
+                <li><a href="#">最新动态</a></li>
+                <li><a href="#">微平台</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right hidden-sm">
+                <li><a href="#">个人中心</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--轮播图-->
+<section id="carousel-example-generic" class="carousel slide wjs-banner" data-ride="carousel" data-interval="2000">
+    <ol class="carousel-indicators">
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+    </div>
+
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</section>
+<!--信息-->
+<section class="wjs-info hidden-xs">
+    <div class="container">
+        <div class="col-sm-6 col-md-4">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <span class="wjs_icon icon-uniE907"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">支付交易保证</h4>
+                        <p>银联支付全程保障资金安全</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <span class="wjs_icon wjs_icon_dollar"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">平台财产安全</h4>
+                        <p>由PICC保驾护航</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <span class="wjs_icon icon-uniE901"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">交易安全</h4>
+                        <p>由中国人寿财险对借款人承保</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <span class="wjs_icon icon-uniE900"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">安全保障</h4>
+                        <p>独创八层安全保障机制</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <span class="wjs_icon icon-uniE904"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">筛选优质资产</h4>
+                        <p>对接上海资信征信系统</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <a href="#">
+                <div class="media">
+                    <div class="media-left">
+                        <span class="wjs_icon icon-uniE902"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">联合信息发布</h4>
+                        <p>通过路透社共同发布利率指数报告</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+<!--预约-->
+<section class="wjs-book">
+    <div class="container">
+        <div class="pull-left">
+            <span class="wjs_icon wjs_icon_clock"></span>现在有<span class="just-now">458人</span>在排队，累计预约交易成功<span
+                class="just-now">7409</span>次。 什么是预约投标？
+            <a class="just-now" href="#">立即预约</a>
+        </div>
+        <div class="pull-right hidden-xs hidden-sm">
+            <a href="#">
+                <span class="wjs_icon wjs_icon_video"></span>微金所企业宣传片
+            </a>
+        </div>
+    </div>
+</section>
+<!--产品-->
+<section class="wjs-product">
+    <div class="container">
+        <!-- Nav tabs -->
+        <div class="wjs-product-nav">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab">特别推荐</a></li>
+                <li><a href="#product-nav-01" data-toggle="tab">微投资</a></li>
+                <li><a href="#product-nav-02" data-toggle="tab">微小宝</a></li>
+                <li><a href="#product-nav-03" data-toggle="tab">微消费</a></li>
+                <li><a href="#product-nav-04" data-toggle="tab">微增利</a></li>
+                <li><a href="#product-nav-05" data-toggle="tab">微金宝</a></li>
+                <li><a href="#product-nav-06" data-toggle="tab">微转让</a></li>
+                <!--<li class="pull-right hidden-xs hidden-sm"><a href="#" class="btn btn-sm ">更多</a></li>-->
+            </ul>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box active">
+                        <div class="pro-right">
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="tab-pane" id="product-nav-01">
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane" id="product-nav-02">
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane" id="product-nav-03">
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane" id="product-nav-04">
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane" id="product-nav-05">
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane" id="product-nav-06">
+                <div class=" col-xs-12 col-sm-6 col-md-4">
+                    <a href="#" class="wjs-product-box">
+                        <div class="pro-right">
+                            <div class="tips">
+                                <span class="red" data-toggle="tooltip" data-placement="top" title="微金所">微</span>
+                                <span class="green" data-toggle="tooltip" data-placement="bottom" title="赣州市">赣</span>
+                            </div>
+                            <p><b>8</b><sub>%</sub></p>
+                            <p>年利率</p>
+                        </div>
+                        <div class="pro-left">
+                            <h3>新手体验标1002期</h3>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p class="pro-cashTitle">起投金额(元)</p>
+                                <p class="pro-cashNum">0.01万</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>起投金额(元)</p>
+                                <p>0.01万</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--新闻-->
+<section class="wjs-news">
+    <div class="container">
+        <div class="col-md-2 col-md-offset-2">
+            <h3>全部新闻</h3>
+        </div>
+        <div class="col-md-1">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-title="全部新闻" href="#news-1" data-toggle="tab"><span class="wjs_icon wjs_icon_news_01"></span></a></li>
+                <li><a href="#news-2" data-title="媒體報道" data-toggle="tab"><span class="wjs_icon wjs_icon_news_02"></span></a></li>
+                <li><a href="#news-3" data-title="微金所頭條" data-toggle="tab"><span class="wjs_icon wjs_icon_news_03"></span></a></li>
+                <li><a href="#news-4" data-title="行業資訊" data-toggle="tab"><span class="wjs_icon wjs_icon_news_04"></span></a></li>
+            </ul>
+        </div>
+        <div class="col-md-7">
+            <div class="tab-content">
+                <div class="tab-pane active" id="news-1">
+                    <ul>
+                        <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【微还款】2015年12月10日共23个项目按时完成全部还款</a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="news-2">
+                    <ul>
+                        <li><a href="#">【新闻】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【新闻】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【新闻】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【新闻】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【新闻】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【新闻】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【新闻】2015年12月10日共23个项目按时完成全部还款</a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="news-3">
+                    <ul>
+                        <li><a href="#">【头条】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【头条】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【头条】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【头条】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【头条】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【头条】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【头条】2015年12月10日共23个项目按时完成全部还款</a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="news-4">
+                    <ul>
+                        <li><a href="#">【资讯】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【资讯】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【资讯】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【资讯】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【资讯】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【资讯】2015年12月10日共23个项目按时完成全部还款</a></li>
+                        <li><a href="#">【资讯】2015年12月10日共23个项目按时完成全部还款</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--合作伙伴-->
+<footer class="wjs-parnter">
+    <div class="container">
+        <h3>合作伙伴</h3>
+        <div class="foot-center">
+        <ul>
+            <li><a href="#"><span class="wjs_icon wjs_icon_partner01"></span></a></li>
+            <li><a href="#"><span class="wjs_icon wjs_icon_partner02"></span></a></li>
+            <li><a href="#"><span class="wjs_icon wjs_icon_partner03"></span></a></li>
+            <li><a href="#"><span class="wjs_icon wjs_icon_partner04"></span></a></li>
+            <li><a href="#"><span class="wjs_icon wjs_icon_partner05"></span></a></li>
+            <li><a href="#"><span class="wjs_icon wjs_icon_partner06"></span></a></li>
+            <li><a href="#"><span class="wjs_icon wjs_icon_partner07"></span></a></li>
+            <li><a href="#"><span class="wjs_icon wjs_icon_partner08"></span></a></li>
+            <li><a href="#"><span class="wjs_icon wjs_icon_partner09"></span></a></li>
+        </ul>
+        </div>
+    </div>
+</footer>
+<script type="text/template" id="point">
+    <%for(var i=0 ;i
+    <list ; i++){%>
+        <li data-target="#carousel-example-generic" data-slide-to="<%=i%>" class="<%=i==0?'active':''%>"></li>
+        <% }%>
+</script>
+<script type="text/template" id="imageUrl">
+    <%for(var i =0 ;i
+    <imgList.length ;i++){%>
+        <div class="item <%=i==0?'active':''%>">
+            <%if(isM){%>
+            <a href="#" class="wjs-banner-mbox "> <img src="<%=imgList[i].murl%>" alt=""></a>
+            <%}else{%>
+            <a href="#" class="wjs-banner-pcbox " style=" background-image: url(<%=imgList[i].pcurl%>);"></a>
+            <%}%>
+        </div>
+        <%}%>
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="lib/iscroll/iscroll.js"></script>
+<script src="lib/arttemplate/template-native.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

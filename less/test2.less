@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@mainColor:red;
+.w50() {
+  width: 50%;
+}
+.f(@direction){
+  float: @direction;
+}
+.lwhb {
+  .w50();
+  .f(left);
+  a {
+    display: block;
+    &:hover {
+      color: @mainColor;
+    }
+  }
+  >div {
+    .w50();
+  }
+}

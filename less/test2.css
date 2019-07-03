@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.lwhb {
+  width: 50%;
+  float: left;
+}
+.lwhb a {
+  display: block;
+}
+.lwhb a:hover {
+  color: red;
+}
+.lwhb > div {
+  width: 50%;
+}
+/*# sourceMappingURL=test2.css.map */
